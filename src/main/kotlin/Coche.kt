@@ -1,7 +1,7 @@
 class Coche(
-    override var modelo : String,
-    override var velocidad : Int,
-    override var carburante: String?,
+    modelo : String,
+    velocidad : Int,
+    carburante: String?,
     // Aqui decimos que hay 4 puertas por defecto en todos los coches, pero se podría cambiar dandole otro valor
     var puertas: Int = 5) : Vehiculo(modelo, 4, velocidad, carburante) { // Con el 4 de ruedas, indica que TODOS los
     // coches tienen 4 ruedas. Es IMPOSIBLE crear un coche con menos ruedas.

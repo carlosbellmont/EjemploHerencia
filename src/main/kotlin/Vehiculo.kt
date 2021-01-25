@@ -1,4 +1,4 @@
-open class Vehiculo(open var modelo : String, open var ruedas : Int, open var velocidad : Int, open var carburante : String?) {
+open class Vehiculo(var modelo : String, var ruedas : Int, var velocidad : Int, var carburante : String?) {
 
     // El Init se ejecuta siempre al crear un nuevo objeto de la clase Vehiculo
     init {
