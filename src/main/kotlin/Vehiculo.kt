@@ -1,4 +1,9 @@
-open class Vehiculo(var modelo : String, var ruedas : Int, var velocidad : Int, var carburante : String?) {
+
+open class Vehiculo(
+    var modelo : String,
+    var ruedas : Int,
+    var velocidad : Int,
+    var carburante : String?) : Arrancable {
 
     // El Init se ejecuta siempre al crear un nuevo objeto de la clase Vehiculo
     init {
@@ -19,6 +24,10 @@ open class Vehiculo(var modelo : String, var ruedas : Int, var velocidad : Int, 
         if(velocidad > 10) {
             velocidad -= 10
         }
+    }
+
+    override fun arrancar() {
+        velocidad = 1
     }
 
     override fun toString(): String {

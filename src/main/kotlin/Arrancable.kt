@@ -1,0 +1,5 @@
+interface Arrancable {
+
+    fun arrancar()
+
+}
